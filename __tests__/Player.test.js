@@ -1,10 +1,7 @@
 const Potion = require('../lib/Potion');
+const Player = require('../lib/Player.js');
 
 jest.mock('../lib/Potion');
-
-const { exportAllDeclaration } = require('@babel/types');
-const Player = require('../lib/Player.js');
-const { JestHook } = require('jest-watcher');
 
 test('creates a player object', () => {
     const player = new Player('Dave');
